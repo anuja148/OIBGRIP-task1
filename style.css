@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+.hero{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("/music.JPEG");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.navbar{
+
+
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+.navbar ul li a:hover{
+
+    color: blueviolet;
+    font-size: 17px;
+}
+
+.content{
+
+    width: 100%;
+    position: absolute;
+    top: 30%;
+
+}
+
+.left{
+
+    margin-left: 3%;
+    
+    
+}
+.left h1{
+
+    font-size: 60pxpx;
+    color: #fff;
+    line-height: 39px;
+    float: left;
+}
+
+.right{
+
+    float: right;
+    margin-right: 5%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.right p{
+
+    font-size: 20px;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 15px;
+
+}
+
+.right p:hover{
+
+    color: rgb(27, 219, 244);
+    cursor: pointer;
+}
+
+#icon{
+
+    width: 50px;
+    cursor: pointer;
+
+}
+
+#icon:hover{
+
+    opacity: 0.5;
+}

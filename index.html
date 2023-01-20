@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="navbar">
+            <img src="" class="logo">
+            <ul>
+                <li><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">New Song </a></li>
+                <li><a href="#">Your Album</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="content">
+
+            <div class="left">
+                <h1>Where Words Fail<br>Music Speaks!</h1>
+            </div>
+
+            <div class="right">
+                <p>Click To Play</p>
+                <img src="/logo.png" id="icon">
+            </div>
+            
+        </div>
+    </div>
+
+    <audio id="mysong">
+        <source src="/song.mpeg" type="audio/mpeg">
+    </audio>
+
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        icon.onclick=function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.scr="/logo.png";
+            }
+            else{
+                mysong.pause();
+                icon.src="/logo.png"
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
